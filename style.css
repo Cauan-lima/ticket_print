@@ -1,0 +1,56 @@
+header {
+      background-color: #f8f8f8;
+      padding: 20px;
+      text-align: center;;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+      justify-content: center;
+    }
+
+    .pontos1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* sempre 3 colunas */
+    gap: 20px; /* espaçamento entre os cards */
+    justify-items: center; /* centraliza os cards dentro das colunas */
+    margin-top: 20px;
+}
+
+.card1 {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card1 img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    
+}
+
+.card1 button {
+    margin: 18px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff0000;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card1 button:hover {
+    background-color: #ff0000;
+}
