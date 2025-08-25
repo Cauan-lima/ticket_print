@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <body>
     <header>
         <H1>
@@ -14,7 +13,7 @@
     </header>
    <section class="pontos1">
     <div class="card1">
-        <img src="/assets/images/Beco Batman.jpeg" alt="Beco do Batman">
+        <img src="{{ url_for('static', filename='assets/images/bridge.jpeg') }}">
         <H1>Liberdade</H1>
         <form action="/imprimir" method="post">
             <button type="submit" name="beco" value="1">Compre aqui!</button>
@@ -22,7 +21,7 @@
     </div>
 
     <div class="card1">
-        <img src="/assets/images/bridge.jpeg" alt="Ponte">
+        <img src="{{ url_for('static', filename='assets/images/bridge.jpeg') }}" alt="Ponte">
         <H1>Liberdade</H1>
         <form action="/imprimir" method="post">
             <button type="submit" name="ponte" value="2">Compre aqui!</button>
@@ -30,7 +29,7 @@
     </div>
 
     <div class="card1">
-        <img src="/assets/images/escultura.jpeg" alt="Escultura">
+        <img src="{{ url_for('static', filename='assets/images/escultura.jpeg') }}" alt="Escultura">
         <H1>Liberdade</H1>
         <form action="/imprimir" method="post">
             <button type="submit" name="escultura" value="3">Compre aqui!</button>
@@ -38,7 +37,7 @@
     </div>
 
     <div class="card1">
-        <img src="/assets/images/liberdade.jpeg" alt="Liberdade">
+        <img src="{{ url_for('static', filename='assets/images/liberdade.jpeg') }}" alt="Liberdade">
         <H1>Liberdade</H1>
         <form action="/imprimir" method="post">
             <button type="submit" name="liberdade" value="4">Compre aqui!</button>
@@ -46,7 +45,7 @@
     </div>
 
     <div class="card1">
-        <img src="/assets/images/Museu da Lingua Portuguesa.jpeg" alt="Museu da Língua Portuguesa">
+        <img src="{{ url_for('static', filename='assets/images/Museu da Lingua Portuguesa.jpeg') }}" alt="Museu da Língua Portuguesa">
         <H1>Liberdade</H1>
         <form action="/imprimir" method="post">
             <button type="submit" name="museu" value="5">Compre aqui!</button>
@@ -54,7 +53,7 @@
     </div>
 
     <div class="card1">
-        <img src="/assets/images/grafite.jpeg" alt="Grafite">
+        <img src="{{ url_for('static', filename='assets/images/grafite.jpeg') }}" alt="Grafite">
         <H1>Liberdade</H1>
         <form action="/imprimir" method="post">
             <button type="submit" name="grafite" value="6">Compre aqui!</button>
